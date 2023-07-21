@@ -12,6 +12,8 @@ from constants import (
     ELITE_C_ROW_PINS,
     ELITE_C_COL_PINS,
 )
+for pins in CLUSTER_PINS.values():
+    assert len(pins) == 13
 
 # parse KEY_LAYOUT to get a list of keys
 keys = [key.strip() for key in KEY_LAYOUT.split(",")]
